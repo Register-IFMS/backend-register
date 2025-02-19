@@ -24,14 +24,5 @@ services:
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: root
 
-  frontend:
-    build:
-      context: frontend/vite-project/
-    container_name: frontend
-    depends_on:
-      - backend
-    ports:
-      - "5173:3000"
-
 volumes:
   mysql_data:
