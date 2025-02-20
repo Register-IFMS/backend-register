@@ -1,11 +1,11 @@
 services:
   mysql:
     image: mysql:9.0.1
-    container_name: mysql-products
+    container_name: mysql-programa
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: products
+      MYSQL_DATABASE: programa
     ports:
       - "3838:3306"
     volumes:
@@ -20,7 +20,7 @@ services:
     ports:
       - "8000:8000"
     environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/products
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/programa
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: root
 

@@ -5,5 +5,4 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.project.crud.javabeans.Linguagem;
 
 public interface LinguagemRepository extends JpaRepository<Linguagem, Long> {
-    List<Linguagem> saveAll(Iterable<Linguagem> linguagens);
 }
